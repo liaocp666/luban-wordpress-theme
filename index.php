@@ -11,10 +11,10 @@
                             <article id="post-<?php the_ID(); ?>" class="article" itemscope="itemscope"
                                      itemtype="http://schema.org/Article">
                                 <div class="article-wrap">
-                                    <div class="entry-title">
+                                    <div class="entry-title mb-3">
                                         <?php the_title(sprintf('<h2 class="entry-title default-max-width" itemprop="headline"><a href="%s" title="%s" aria-label="">', esc_url(get_permalink()), get_the_title(), get_the_title()), '</a></h2>'); ?>
                                     </div>
-                                    <div class="entry-content">
+                                    <div class="entry-content mb-3">
                                         <p itemprop="articleBody">
                                             <?php if (post_password_required()) {
                                                 the_content();
