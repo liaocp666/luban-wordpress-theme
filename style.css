@@ -14,6 +14,11 @@ Lu Ban WordPress Theme, (C) 2022 Kent Liao
 Lu Ban is distributed under the terms of the GNU GPL.
 */
 
+:root {
+    --border-light: #e0e3ef;
+    --bg-light: #f7f7f5;
+}
+
 @font-face {
     font-family: Emoji;
     src: local("Apple Color Emojiji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji");
@@ -33,6 +38,10 @@ a {
 a:active, a:hover {
     outline: 0;
     color: #0FA0CE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word
 }
 
 #header {
@@ -199,6 +208,71 @@ li.current-menu-item a, .current-menu-parent a {
 
 .post-content p {
     margin: 0 0 2rem;
+}
+
+.post-content > table, .post-content div > table {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid var(--border-light);
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show
+}
+
+.post-content > table th, .post-content div > table th {
+    font-weight: 700
+}
+
+.post-content > table th, .post-content > table td, .post-content div > table th, .post-content div > table td {
+    border: 1px solid var(--border-light);
+    padding: .75rem 1.125rem;
+    margin: 0;
+    overflow: visible
+}
+
+.post-content > table thead, .post-content div > table thead {
+    vertical-align: bottom;
+    white-space: nowrap
+}
+
+.post-content > table tbody tr:nth-child(odd), .post-content div > table tbody tr:nth-child(odd) {
+    background: var(--bg-light)
+}
+
+.post-content > .alignleft > table, .post-content > .alignright > table, .post-content div > .alignleft > table, .post-content div > .alignright > table {
+    margin: 0
+}
+
+.post-content caption {
+    background: var(--bg-light);
+    font-weight: 600;
+    padding: .5em;
+    text-align: center
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+    line-height: 1.2;
+    margin: 2.5rem 0 2rem;
+}
+
+.post-content h4, .post-content h5, .post-content h6 {
+    margin: 2rem 0 2rem
+}
+
+.post-content h2 {
+    position: relative;
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid var(--border-light)
+}
+
+.post-content ul ul, .post-content ol ol, .post-content ul ol, .post-content ol ul {
+    margin: 0 0 1rem
+}
+
+.post-content hr {
+    margin: 4rem auto
 }
 
 .post-tags {

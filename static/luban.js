@@ -1,5 +1,6 @@
 $(() => {
     navScrollTop()
+    hljs.highlightAll()
 })
 
 $(document).scroll(() => {

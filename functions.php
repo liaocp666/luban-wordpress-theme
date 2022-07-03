@@ -62,9 +62,11 @@ function lu_ban_scripts()
     wp_enqueue_style('animate-style', 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/animate.css/4.1.1/animate.min.css', array());
     wp_enqueue_style('lu-ban-style', get_template_directory_uri() . '/style.css', ['bootstrap-style', 'animate-style']);
     wp_enqueue_style('font-awesome-style', 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css', array());
+    wp_enqueue_style('highlight-style', 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/styles/base16/default-light.min.css', array());
 
     wp_enqueue_script('jquery-script', 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js', array(), false, true);
     wp_enqueue_script('bootstrap-script', 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.bundle.min.js', array('jquery-script'), false, true);
+    wp_enqueue_script('highlight-script', 'https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/highlight.min.js', array(), false, true);
     wp_enqueue_script('lu-ban-script', get_template_directory_uri() . '/static/luban.js', array('jquery-script', 'bootstrap-script'), false, true);
 }
 
