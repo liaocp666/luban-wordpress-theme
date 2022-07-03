@@ -17,7 +17,6 @@ Lu Ban is distributed under the terms of the GNU GPL.
 :root {
     --border-light: #e0e3ef;
     --bg-light: #f7f7f5;
-    --blockquote-color: #666;
 }
 
 @font-face {
@@ -164,18 +163,6 @@ h6,.h6,.heading-size-6 {
 
 .h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small {
     font-size: 85%
-}
-
-blockquote {
-    border-left: 4px solid #ddd;
-    color: var(--blockquote-color);
-    margin: 0;
-    padding: 0 15px
-}
-
-blockquote cite::before {
-    content: '-';
-    padding: 0 5px
 }
 
 #header {
