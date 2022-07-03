@@ -613,3 +613,12 @@ html, body {
 selector {
     scroll-margin-top: 100px;
 }
+
+.post-content iframe {
+    margin: 0;
+    height: 730px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
