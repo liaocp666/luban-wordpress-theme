@@ -4,6 +4,13 @@ if (!defined('THEME_DB_VERSION')) {
     define('THEME_DB_VERSION', wp_get_theme()->Version);
 }
 
+// 图片添加a标签
+add_filter('the_content', function ($content) {
+    $pattern = "/<img(.*?)src=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
+    $replacement = '<a href=$2$3.$4$5 rel="lightbox"><img$1href=$2$3.$4$5 rel="lightbox"$6></a>';
+    return preg_replace($pattern, $replacement, $content);
+});
+
 // Gravatar头像使用镜像服务器
 function lu_ban_get_avatar($avatar)
 {
