@@ -6,7 +6,7 @@
             <h2 style="border-bottom:1px solid #ddd;font-size:16px;font-weight:400;padding:0px 0 10px 8px">
                 <span style="color:#12addb;font-weight:700"> </span>您在
                 <a style="text-decoration:none;color:#12addb;;font-weight:bold;"
-                   href="https://cacx.cc/592/comment-page-1#comment-800" target="_blank"
+                   href="<?php echo get_permalink($parent->comment_post_ID);?>" target="_blank"
                    rel="noopener">《<?php echo get_the_title($parent->comment_post_ID) ?>》</a>的评论有了新回复
             </h2>
             <div style="padding:0 12px 0 12px;margin-top:18px">
