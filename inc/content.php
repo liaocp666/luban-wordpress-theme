@@ -37,7 +37,7 @@
                                     <div class="d-flex">
                                         <div class="author-img" style="overflow:hidden;">
                                             <img class="rounded rounded-circle"
-                                                 src="https://www.kokoo.top/images/avatar.webp" alt="头像" height="64"
+                                                 src="<?php echo get_template_directory_uri().'/static/images/logo.webp'; ?>" alt="头像" height="64"
                                                  width="64">
                                         </div>
                                         <div class="author-info mx-3 mt-2">

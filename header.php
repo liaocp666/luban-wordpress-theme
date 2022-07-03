@@ -14,7 +14,7 @@
                             <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
                                 <div class="site-wrap">
                                     <div class="site-logo">
-                                        <img src="https://www.kokoo.top/images/avatar.webp"
+                                        <img src="<?php echo get_template_directory_uri().'/static/images/logo.webp'; ?>"
                                              alt="<?php bloginfo('name'); ?>" width="24"
                                              height="24" class="d-inline-block align-text-top">
                                     </div>
