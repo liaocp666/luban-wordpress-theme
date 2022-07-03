@@ -37,21 +37,25 @@
                                     <div class="d-flex">
                                         <div class="author-img" style="overflow:hidden;">
                                             <img class="rounded rounded-circle"
-                                                 src="<?php echo get_template_directory_uri().'/static/images/logo.webp'; ?>" alt="头像" height="64"
+                                                 src="<?php echo get_template_directory_uri() . '/static/images/logo.webp'; ?>"
+                                                 alt="头像" height="64"
                                                  width="64">
                                         </div>
                                         <div class="author-info mx-3 mt-2">
                                             <div class="">
-                                                Kenv Liao
+                                                <?php echo get_the_author(); ?>
                                             </div>
                                             <div class="mt-3 post-meta">
-                                                尝试做的更好
+                                                <?php echo get_the_author_meta('description'); ?>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="align-self-center post-cc">
-                                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br/><br/>
-                                        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可
+                                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh"><img
+                                                    alt="知识共享许可协议" style="border-width:0"
+                                                    src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a><br/><br/>
+                                        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名
+                                            4.0 国际许可协议</a>进行许可
                                     </div>
                                 </div>
                             </div>
