@@ -25,3 +25,8 @@ function navScrollTop() {
         $('#nav-placeholder').show()
     }
 }
+
+function modalQrcode() {
+    var myModal = new bootstrap.Modal(document.getElementById('modalQrcode'), {})
+    myModal.show()
+}

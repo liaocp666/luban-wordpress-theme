@@ -18,9 +18,10 @@
                             <div class="footer-links">
                                 <div class="links-hr">关注博客</div>
                                 <div>
-                                    <a href="/sitemap.xml"><i class="fa-solid fa-sitemap"></i></a>
-                                    <a href="mailto:2964556627@qq.com"><i class="fa-solid fa-rss"></i></a>
-                                    <a href="https://www.cnblogs.com/lin02/"><i class="fa-brands fa-qq"></i></a>
+                                    <a href="<?php echo get_site_url(); ?>/sitemap.xml" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+                                    <a href="<?php echo get_site_url(); ?>/rss"><i class="fa-solid fa-rss"></i></a>
+                                    <a href="javascript:modalQrcode();"><i class="fa-brands fa-weixin"></i></a>
+                                    <a href="https://github.com/liaocp666" target="_blank"><i class="fa-brands fa-github"></i></a>
                                     <a href="mailto:2964556627@qq.com""><i class="fa-solid fa-envelope"></i></a>
                                 </div>
                             </div>
@@ -35,9 +36,9 @@
                             <div class="footer-links">
                                 <div class="links-hr">友情连接</div>
                                 <div>
-                                    <a href="https://www.danilelxp.com/">杂谈漫话小站</a>
-                                    <a href="https://www.islery.com/">姑苏的猫</a>
-                                    <a href="https://www.cnblogs.com/lin02/">长林咯</a>
+                                    <a href="https://www.danilelxp.com/" target="_blank">杂谈漫话小站</a>
+                                    <a href="https://www.islery.com/" target="_blank">姑苏的猫</a>
+                                    <a href="https://www.cnblogs.com/lin02/" target="_blank">长林咯</a>
                                 </div>
                             </div>
                         </div>
@@ -46,6 +47,19 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="modalQrcode" tabindex="-1" aria-labelledby="modalQrcode" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalQrcode">微信扫码</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="mx-auto d-block" src="<?php echo get_template_directory_uri() . '/static/images/qrcode.webp'; ?>" alt="二维码">
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <?php wp_footer(); ?>
 </body>

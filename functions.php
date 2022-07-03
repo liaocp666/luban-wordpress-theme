@@ -59,7 +59,8 @@ class description_walker extends Walker_Nav_Menu
 function lu_ban_scripts()
 {
     wp_enqueue_style('bootstrap-style', 'https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css', array());
-    wp_enqueue_style('lu-ban-style', get_template_directory_uri() . '/style.css', ['bootstrap-style']);
+    wp_enqueue_style('animate-style', 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/animate.css/4.1.1/animate.min.css', array());
+    wp_enqueue_style('lu-ban-style', get_template_directory_uri() . '/style.css', ['bootstrap-style', 'animate-style']);
     wp_enqueue_style('font-awesome-style', 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css', array());
 
     wp_enqueue_script('jquery-script', 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js', array(), false, true);
