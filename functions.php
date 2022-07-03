@@ -67,7 +67,8 @@ function lu_ban_scripts()
     wp_enqueue_script('jquery-script', 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js', array(), false, true);
     wp_enqueue_script('bootstrap-script', 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.bundle.min.js', array('jquery-script'), false, true);
     wp_enqueue_script('highlight-script', 'https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/highlight.min.js', array(), false, true);
-    wp_enqueue_script('lu-ban-script', get_template_directory_uri() . '/static/luban.js', array('jquery-script', 'bootstrap-script'), false, true);
+    wp_enqueue_script('highlight-ln-script', get_template_directory_uri() . '/static/js/highlight.ln.min.js', array(), false, true);
+    wp_enqueue_script('lu-ban-script', get_template_directory_uri() . '/static/js/luban.js', array('jquery-script', 'bootstrap-script'), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'lu_ban_scripts');
@@ -146,8 +147,8 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_filter('the_content_feed', 'wp_staticize_emoji');
 remove_filter('comment_text_rss', 'wp_staticize_emoji');
 remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
-remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
-remove_action( 'wp_body_open', 'gutenberg_global_styles_render_svg_filters' );
+remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
+remove_action('wp_body_open', 'gutenberg_global_styles_render_svg_filters');
 
 // 禁止wp-embed.min.js
 function disable_embeds_init()
