@@ -37,7 +37,7 @@
                                     <div class="d-flex">
                                         <div class="author-img" style="overflow:hidden;">
                                             <img class="rounded rounded-circle"
-                                                 src="<?php echo get_template_directory_uri() . '/static/images/logo.webp'; ?>"
+                                                 src="<?php echo get_avatar_url(get_the_author_meta('user_email')); ?>"
                                                  alt="头像" height="64"
                                                  width="64">
                                         </div>
