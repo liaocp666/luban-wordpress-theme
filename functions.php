@@ -4,6 +4,14 @@ if (!defined('THEME_DB_VERSION')) {
     define('THEME_DB_VERSION', wp_get_theme()->Version);
 }
 
+// 去除多余css
+function wpassist_remove_block_library_css()
+{
+    wp_dequeue_style('wp-block-library');
+}
+
+add_action('wp_enqueue_scripts', 'wpassist_remove_block_library_css');
+
 // 图片添加a标签
 add_filter('the_content', function ($content) {
     $pattern = "/<img(.*?)src=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
