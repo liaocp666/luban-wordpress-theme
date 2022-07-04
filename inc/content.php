@@ -21,7 +21,7 @@
                                     <span class="mr-3">
                                     <time datetime="<?php echo the_time('Y-m-d'); ?>"
                                           title="<?php echo the_time('Y-m-d'); ?>"
-                                          itemprop="datePublished" pubdate>
+                                          itemprop="datePublished">
                                                 <?php echo the_time('Y-m-d'); ?>
                                     </time>
                                 </span>
