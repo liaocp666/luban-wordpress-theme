@@ -19,10 +19,10 @@
                                     /
                                 </span>
                                     <span class="mr-3">
-                                    <time datetime="<?php echo get_the_time('c'); ?>"
-                                          title="<?php echo get_the_time('c'); ?>"
+                                    <time datetime="<?php echo the_time('Y-m-d'); ?>"
+                                          title="<?php echo the_time('Y-m-d'); ?>"
                                           itemprop="datePublished" pubdate>
-                                                <?php the_time('Y-m-d'); ?>
+                                                <?php echo the_time('Y-m-d'); ?>
                                     </time>
                                 </span>
                                 </div>
