@@ -18,10 +18,12 @@
                             <div class="footer-links">
                                 <div class="links-hr">关注博客</div>
                                 <div>
-                                    <a href="<?php echo get_site_url(); ?>/sitemap.xml" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+                                    <a href="<?php echo get_site_url(); ?>/sitemap.xml" target="_blank"><i
+                                                class="fa-solid fa-sitemap"></i></a>
                                     <a href="<?php echo get_site_url(); ?>/rss"><i class="fa-solid fa-rss"></i></a>
                                     <a href="javascript:modalQrcode();"><i class="fa-brands fa-weixin"></i></a>
-                                    <a href="https://github.com/liaocp666" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://github.com/liaocp666" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
                                     <a href="mailto:2964556627@qq.com"><i class="fa-solid fa-envelope"></i></a>
                                 </div>
                             </div>
@@ -55,7 +57,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img class="mx-auto d-block" src="<?php echo get_template_directory_uri() . '/static/images/qrcode.webp'; ?>" alt="二维码">
+                    <img class="mx-auto d-block"
+                         src="<?php echo get_template_directory_uri() . '/static/images/qrcode.webp'; ?>"
+                         alt="<?php echo the_author_meta('nickname'); ?>">
                 </div>
             </div>
         </div>
