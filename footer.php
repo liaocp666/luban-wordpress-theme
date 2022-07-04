@@ -22,7 +22,7 @@
                                     <a href="<?php echo get_site_url(); ?>/rss"><i class="fa-solid fa-rss"></i></a>
                                     <a href="javascript:modalQrcode();"><i class="fa-brands fa-weixin"></i></a>
                                     <a href="https://github.com/liaocp666" target="_blank"><i class="fa-brands fa-github"></i></a>
-                                    <a href="mailto:2964556627@qq.com""><i class="fa-solid fa-envelope"></i></a>
+                                    <a href="mailto:2964556627@qq.com"><i class="fa-solid fa-envelope"></i></a>
                                 </div>
                             </div>
                         </div>
