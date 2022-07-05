@@ -1,5 +1,5 @@
 <footer class="footer border-top">
-    <section class="container-fluid">
+    <div class="container-fluid">
         <div class="footer-wrap">
             <div class="row">
                 <div class="col mb-3">
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <div class="modal fade" id="modalQrcode" tabindex="-1" aria-labelledby="modalQrcode" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
