@@ -622,3 +622,18 @@ selector {
     width: 100%;
     display: block;
 }
+
+.wp-block-table table {
+	width:100%;
+	border:1px solid $color-form-highlight;
+}
+
+.wp-block-table thead {
+	width:100%;
+	background:#000;
+    color: #ffffff;
+}
+
+.wp-block-table tbody tr:nth-of-type(odd) {
+  background: #eeeeee;
+}
