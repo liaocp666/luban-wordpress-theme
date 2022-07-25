@@ -1,6 +1,7 @@
 $(() => {
     navScrollTop()
     hljs.initHighlighting();
+    addTableClass();
 })
 
 $(document).scroll(() => {
@@ -30,4 +31,10 @@ function navScrollTop() {
 function modalQrcode() {
     var myModal = new bootstrap.Modal(document.getElementById('modalQrcode'), {})
     myModal.show()
+}
+
+function addTableClass() {
+    $('table').each(function() {
+        $(this).addClass('table table-striped table-hover'))
+    }
 }
