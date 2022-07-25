@@ -157,6 +157,14 @@ remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
 remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
 remove_action('wp_body_open', 'gutenberg_global_styles_render_svg_filters');
 
+// 去除多余css
+function wpassist_remove_block_library_css()
+{
+    wp_dequeue_style('wp-block-library');
+}
+
+add_action('wp_enqueue_scripts', 'wpassist_remove_block_library_css');
+
 // 禁止wp-embed.min.js
 function disable_embeds_init()
 {
