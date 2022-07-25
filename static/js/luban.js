@@ -35,6 +35,6 @@ function modalQrcode() {
 
 function addTableClass() {
     $('table').each(function() {
-        $(this).addClass('table table-striped table-hover'))
+        $(this).addClass('table table-striped table-hover')
     }
 }
